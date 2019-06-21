@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
-    "axios-progress-bar": "^1.2.0",
     "body-parser": "^1.18.3",
     "btoa": "^1.2.1",
     "cloudinary": "^1.13.2",
