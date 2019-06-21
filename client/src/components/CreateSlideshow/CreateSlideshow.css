@@ -1,0 +1,31 @@
+.dropzone p {
+    outline: 2px dashed #4d4d4d;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    height:300px;
+    width:100%;  
+    background-color: #FFF;  
+    color:#4d4d4d;
+}
+
+.dropzone p img {
+    width: 250px;
+}
+
+.filePreview img {
+    max-height:300px;
+    width:100% !important;
+}
+
+input {
+    margin-bottom:1.5em !important;
+}
+
+.uploadForm { height: 600px; }
+
+.dropFileLabel { 
+    font-size: 24px;
+    display: block;
+    padding-top: 5em;
+}

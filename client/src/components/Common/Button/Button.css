@@ -1,0 +1,30 @@
+.btn { margin: 15px; cursor:pointer !important; width:100px; text-align: center;}
+
+@media (min-width:1201px) {
+.emailDesign { position: relative; top:-7px; left: -12px;}
+}
+
+@media(max-width:1200px) {
+    .emailDesign {
+        margin:0;
+    }
+}
+
+.emailDesign {
+    background-color:#1BA1E1 !important;
+    border-color: #1BA1E1 !important;
+}
+
+.danger {
+    background-color:red !important;
+    border-color: red !important;
+}
+
+.addProduct {
+    margin-bottom:10px;
+    float:right;
+}
+
+.dropdown button {
+    margin:0px;
+}

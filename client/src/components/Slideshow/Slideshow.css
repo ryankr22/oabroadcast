@@ -1,0 +1,9 @@
+.slideshow-container {
+  /* background-color: #000;   */
+  height:1030px; 
+}
+
+.slideshow-container-fullscreen {
+  height:1080px;
+  background-color: #000;  
+}

@@ -1,0 +1,3 @@
+need to save url of images to be able to order them.
+need to be able to edit slideshow
+need to be able to delete from cloudinary when deleted from sql
