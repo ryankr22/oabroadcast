@@ -7,7 +7,6 @@ import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import * as sessionActions from './actions/sessionActions';
 import { withRouter } from 'react-router-dom';
-import { loadProgressBar } from 'axios-progress-bar';
 import authentication from './modules/authentication';
 import SlideshowFullscreen from './components/Slideshow/SlideshowFullscreen';
 import MySlideshows from './components/MySlideshows/MySlideshows';
@@ -17,8 +16,6 @@ import Administration from './components/Administration/Administration';
 class App extends Component {
   constructor(props, context) {
     super(props, context);  
-    
-    loadProgressBar();
 
     let user = authentication.verifyToken();
 
