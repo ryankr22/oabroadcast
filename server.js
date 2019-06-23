@@ -5,8 +5,19 @@ var api = require('./routes/api');
 var cloudinary = require('cloudinary');
 const bodyParser = require('body-parser');
 
+const __dirname = "client";
 //if (process.env.NODE_ENV === "production") {
-app.use(express.static("client/build"));
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/ping', function (req, res) {
+    return res.send('pong');
+});
+
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+//app.use(express.static("client/build"));
 //}
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -20,4 +31,6 @@ cloudinary.config({
     api_secret: 'rQ4gpC1eTftju-LivnbIPkYEI4s' 
 });
 
-app.listen(process.env.PORT || 5000);  
+//app.listen(process.env.PORT || 5000);  
+
+app.listen(process.env.PORT || 8080);  
