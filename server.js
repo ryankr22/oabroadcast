@@ -3,6 +3,7 @@ var app = express();
 var login = require('./routes/login');
 var api = require('./routes/api');
 var cloudinary = require('cloudinary');
+var path = require('path'); 
 const bodyParser = require('body-parser');
 
 //if (process.env.NODE_ENV === "production") {
