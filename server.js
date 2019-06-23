@@ -5,7 +5,6 @@ var api = require('./routes/api');
 var cloudinary = require('cloudinary');
 const bodyParser = require('body-parser');
 
-const __dirname = "client";
 //if (process.env.NODE_ENV === "production") {
 app.use(express.static(path.join(__dirname, 'build')));
 
