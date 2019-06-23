@@ -7,14 +7,16 @@ var path = require('path');
 const bodyParser = require('body-parser');
 
 //if (process.env.NODE_ENV === "production") {
-app.use(express.static(path.join("client", 'build', 'index.html')));
+let strPath = path.join(__dirname + "/client", 'build');
+console.log(strPath);
+app.use(express.static(strPath));
 
 app.get('/ping', function (req, res) {
     return res.send('pong');
 });
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join("client", 'build', 'index.html'));
+    res.sendFile(path.join(__dirname + "/client", 'build', 'index.html'));
 });
 
 //app.use(express.static("client/build"));
