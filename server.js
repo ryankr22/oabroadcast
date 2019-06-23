@@ -6,21 +6,13 @@ var cloudinary = require('cloudinary');
 var path = require('path'); 
 const bodyParser = require('body-parser');
 
-//if (process.env.NODE_ENV === "production") {
-let strPath = path.join(__dirname + "/client", 'build');
-console.log(strPath);
-app.use(express.static(strPath));
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static('client/build'));
+}
 
-app.get('/ping', function (req, res) {
-    return res.send('pong');
+app.get('*', (request, response) => {
+	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
-
-app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, '/client/build/index.html'));
-});
-
-//app.use(express.static("client/build"));
-//}
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
