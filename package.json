@@ -14,7 +14,7 @@
     "btoa": "^1.2.1",
     "cloudinary": "^1.13.2",
     "express": "^4.16.4",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mssql": "^5.0.3",
     "nodemon": "^1.18.10",
     "sequelize": "^5.2.15",
